@@ -1,0 +1,180 @@
+.container {
+    padding: 10px 0px 10px 0px;
+    color: #fff;
+}
+
+.titleOur {
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 43px;
+    margin-bottom: 70px;
+    text-align: center;
+    margin-top: 150px;
+}
+
+.containTitle {
+    display: flex;
+    flex-direction: column;
+    margin-top: 90px;
+
+    h4 {
+        font-size: 22px;
+    }
+}
+
+.description {
+    width: 40vw;
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+.ourTitle {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.service_list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service_list button {
+    background-color: initial;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    color: #fff;
+    outline: none;
+    font-size: 18px;
+    padding: 8px 28px;
+    transition: all .2s;
+    margin-bottom: 10px;
+    list-style: none;
+    cursor: pointer;
+}
+
+.service_list button:hover {
+    border-color: #0d8bd1;
+    color: #0d8bd1;
+}
+
+.service_list .title  {
+    border-color: #0d8bd1;
+    color: #0d8bd1;
+}
+
+.deliverables {
+    max-width: 100%;
+    margin-top: 70px;
+    background: #202020;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 30px;
+}
+
+
+.deliverables_title {
+    background: #202020;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.deliverables_list {
+    list-style-type: disc;
+    padding-left: 20px;
+    background: #202020;
+}
+
+.deliverables_list div {
+    margin-bottom: 8px;
+    list-style: none;
+    background: #202020;
+    text-align: left;
+    display: flex;
+
+    .check {
+        background: #202020;
+        margin-right: 20px;
+    }
+}
+
+
+@media (max-width: 1181px) {
+    .ourTitle {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+
+        .deliverables {
+            margin: 10px;
+        }
+
+        .containTitle {
+            width: 100%;
+            margin-top: 30px;
+
+            .title,
+            .description {
+                width: 100%;
+                margin-top: 20px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+
+@media (max-width: 659px) {
+    .title {
+        margin-top: 30px;
+        font-size: 25px;
+    }
+
+    .deliverables {
+        gap: 0;
+        padding: 10px;
+
+        .deliverables_list {
+            padding-left: 5px;
+        }
+
+        .deliverables_list div {
+            font-size: 3vw;
+        }
+    }
+
+    .service_list {
+        flex-wrap: wrap;
+        gap: 10px;
+
+        button {
+            font-size: 3vw;
+
+        }
+    }
+}
+
+@media (max-width: 580px) {
+    .titleOur {
+        margin-top: 20px;
+        font-size: 25px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .description {
+        font-size: 3vw;
+        margin-bottom: 20px;
+    }
+
+   
+     .deliverables {
+        padding: 5px;
+    }
+}

@@ -1,0 +1,63 @@
+{
+    "Header": {
+        "services": "Services",
+        "works": "Works",
+        "workflows": "Workflows",
+        "contacts": "Contacts"
+    },
+    "Main": {
+        "title": "We develop IT solutions for your business",
+        "description": "Our professional team is ready to provide you with high-quality web solutions and bring your innovative ideas to life. Global Lab uses the latest and most in-demand technologies to create an outstanding product.",
+        "lid": "submit your application"
+    },
+    "OurServices": {
+        "title": "Our Services",
+        "webDev": "Website Development",
+        "projectResearch": "Project Research",
+        "mvpDevelopment": "MVP Development",
+        "rapidPrototyping": "Rapid Prototyping",
+        "webDevDesc": "Our website development services will help your business stand out online and attract new customers.",
+        "projectResearchDesc": "Our project research services help clients clearly define goals, scope, and potential complexities of the project. This preliminary phase is critical for aligning expectations and creating a foundation for successful project execution.",
+        "mvpDevelopmentDesc": "Our MVP development services are designed for startups and businesses looking to quickly launch a product with basic features. We focus on creating a minimum viable product that validates your business idea with minimal risks and investments.",
+        "results": "Deliverables",
+        "prioritization": "Feature prioritization",
+        "uniqueDesign": "Unique design",
+        "responsiveness": "Responsiveness to different devices",
+        "seoOptimization": "SEO optimization",
+        "techSupport": "Technical support",
+        "marketAnalysis": "Market and competitor analysis",
+        "requirementsDefinition": "Defining key requirements",
+        "technicalComplexity": "Assessing technical complexity",
+        "riskAnalysis": "Risk analysis and strategy development",
+        "documentationPreparation": "Documentation preparation",
+        "coreFeatures": "Defining core features",
+        "prototypeCreation": "Rapid prototyping",
+        "testingFeedback": "Testing and feedback",
+        "feedbackAdaptation": "Adapting to feedback",
+        "scaling": "Scaling and further development"
+    },
+    "TechnologySection": {
+        "title": " We Use"
+    },
+
+    "Processes": {
+        "header": "Processes",
+        "ideaSearchTitle": "Idea Search",
+        "ideaSearchDesc": "When you come to us with an idea, we help you articulate it, and then we start working.",
+        "businessAnalysisTitle": "Business Analysis",
+        "businessAnalysisDesc": "We define product features and which specific technologies should be used to implement your idea.",
+        "designPrototypingTitle": "Design and Prototyping",
+        "designPrototypingDesc": "Once we have all the necessary information, we create a prototype that demonstrates the appearance of your application.",
+        "developmentTitle": "Development",
+        "developmentDesc": "Once the prototype has been reviewed and approved, we begin development.",
+        "testingTitle": "Testing",
+        "testingDesc": "When the main part of programming and design work is done, we conduct thorough testing.",
+        "launchSupportTitle": "Launch and Support",
+        "launchSupportDesc": "After the project is launched, the team monitors its operation to ensure the intended efficiency."
+      },
+
+      "Projects": {
+        "project1Title": "Project 1",
+        "project1Desc": "description  1"
+      }
+}
