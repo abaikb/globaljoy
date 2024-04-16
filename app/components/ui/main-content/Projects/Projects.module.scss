@@ -1,8 +1,6 @@
 .projectsContainer {
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  padding: 20px;
   color: #fff;
   text-align: center;
 }
@@ -12,11 +10,12 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 50px;
+  gap: 30px;
+  margin-top: 20px;
 }
 
 .projectCard {
-  max-width: 340px; 
+  max-width: 270px; 
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
