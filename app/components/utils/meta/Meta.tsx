@@ -16,7 +16,7 @@ const Meta: FC<IMeta> = ({ title, description }) => {
                 type="image/x-icon"
             />
             {description ? (
-                <meta ItemProp="description" name="description" content={description} />
+                <meta itemProp="description" name="description" content={description} />
             ) : (
                 <meta name="robots" content="noindex, nofollow" />
             )}
