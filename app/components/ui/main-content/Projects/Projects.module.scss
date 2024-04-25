@@ -1,102 +1,83 @@
 .projectsContainer {
+
   display: flex;
   flex-direction: column;
-  color: #fff;
-  text-align: center;
+  justify-content: center;
+
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #fff;
+  }
 }
 
-.ProjectList {
-  width: 100%;
+.projectCarousel {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
-  gap: 30px;
-  margin-top: 20px;
+  align-items: center;
 }
 
 .projectCard {
-  max-width: 270px; 
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background: #202020;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   text-align: center;
-  margin-bottom: 20px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-
-  &:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-  }
+  border-radius: 10px;
+  padding: 20px;
+  max-width: 600px;
+  height: 500px;
+  transition: transform 0.5s ease;
+  position: relative;
 
   img {
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-  }
-
-  .projectTitle {
-    font-size: 22px;
-    padding: 10px 20px;
-    font-weight: bold;
-  }
-
-  .projectDescription {
-    padding: 0 20px 10px;
-    font-size: 16px;
-    color: #666;
-    flex-grow: 1;
-  }
-
-  .technologies {
-    font-size: 14px;
-    color: #777;
-    padding: 10px 20px 20px;
-    background-color: #f0f0f0;
-    width: 100%;
-    border-top: 1px solid #e0e0e0;
-  }
-}
-
-@media (max-width: 910px) {
-  .ProjectList {
-    gap: 20px;
-  }
-
-  .projectCard {
     max-width: 300px;
-
-    .projectTitle {
-      font-size: 18px; 
-      width: 100%;
-    }  
-
-    .projectDescription {
-      width: 100%;
-      font-size: 14px;
-    }
-  }
-
- 
-  .projectDescription, .technologies {
-    font-size: 14px; 
+    background: #202020;
   }
 }
 
-@media (max-width: 740px) {
-  .projectCard {
-    max-width: 100%;
+.projectCard:not(:first-child) {
+  transform: translateX(-100%);
+}
 
-    .projectTitle {
-      font-size: 14px; 
-      width: 100%;
-    }  
+.projectCard.active {
+  transform: translateX(0);
+}
 
-    .projectDescription {
-      width: 100%;
-      font-size: 12px;
-    }
+.projectTitle {
+  font-size: 20px;
+  background: #202020;
+  color: #fff;
+
+}
+
+.projectDescription {
+  font-size: 16px;
+  color: #666;
+  background: #202020;
+  color: #fff;
+
+}
+
+.technologies {
+  font-size: 14px;
+  color: #888;
+  background: #202020;
+}
+
+.containerBtn {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 70px;
+
+  button {
+    border: none;
+    border-radius: 7px;
+    color: #fff;
+    background: #202020;
+    max-width: 300px;
+    padding: 10px;
   }
 }

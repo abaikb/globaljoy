@@ -31,15 +31,17 @@ const Header: React.FC = () => {
     return (
         <header className={styles.header}>
             <div className={styles.logoContainer}>
-                <Image src='/logo.PNG' alt="Logo" width={100} height={40} className={styles.logo} />
-                <h2>Global Lab</h2>
+                <Link className={styles.logoContainer} href="/">
+                    <Image src='/logo.PNG' alt="Logo" width={100} height={40} className={styles.logo} />
+                    <h2>Global Lab</h2>
+                </Link>
             </div>
             <nav className={`${styles.nav} ${isMenuOpen ? styles.open : ''}`}>
                 {isMenuOpen && <button className={styles.closeMenu} onClick={closeMenu}>X</button>}
-                <Link href="/#services">{t('services')}</Link>
-                <Link href="/#works">{t('works')}</Link>
-                <Link href="/#workflows">{t('workflows')}</Link>
-                <Link href="/#contacts">{t('contacts')}</Link>
+                <Link onClick={closeMenu} href="/#services">{t('services')}</Link>
+                <Link onClick={closeMenu} href="/#works">{t('works')}</Link>
+                <Link onClick={closeMenu} href="/#workflows">{t('workflows')}</Link>
+                <Link onClick={closeMenu} href="/#contacts">{t('contacts')}</Link>
                 {isMenuOpen && (
                     <div className={styles.socialLinks}>
                         <Link href="facebook-link" target='blank' passHref>Facebook</Link>

@@ -14,6 +14,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #fff;
+    text-decoration: none;
 }
 
 .logo {
@@ -177,7 +179,6 @@
     @media (max-width: 475px) {
         .nav {
             width: 80%; 
-            padding: 40px; 
         }
     }
     

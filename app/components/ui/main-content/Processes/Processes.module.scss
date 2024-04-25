@@ -1,3 +1,8 @@
+.section {
+    padding-top: 100px; /* Высота вашего заголовка */
+    margin-top: -100px;
+  }
+
 .container {
     display: flex;
     flex-direction: column;

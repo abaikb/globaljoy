@@ -39,7 +39,7 @@ const Processes: React.FC = () => {
   ];
 
   return (
-    <div className={styles.container}>
+    <div id="workflows" className={styles.container}>
       <h2 className={styles.heading}>{t('header')}</h2>
       <div className={styles.processList}>
         {processes.map((process) => (

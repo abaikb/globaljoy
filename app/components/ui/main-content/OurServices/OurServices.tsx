@@ -63,7 +63,7 @@ const OurServices: React.FC = () => {
     }, [t, selectedServiceIndex]);
 
     return (
-        <div className={styles.container}>
+        <div  id="services" className={styles.container}>
             <h2 className={styles.titleOur}>{t('title')}</h2>
             <div className={styles.service_list}>
                 {services.map((service, index) => (
