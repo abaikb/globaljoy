@@ -7,6 +7,7 @@ import WeUseTechnologies from '../../ui/main-content/WeUseTechnologies/WeUseTech
 import Processes from '@/ui/main-content/Processes/Processes';
 import Projects from '@/ui/main-content/Projects/Projects';
 import ContactForm from '@/ui/main-content/ContactForm/ContactForm';
+import Footer from '@/ui/main-content/Footer/ Footer';
 
 
 
@@ -30,6 +31,7 @@ const Main = () => {
             <Processes />
             <Projects />
             <ContactForm />
+            <Footer />
         </Layout>
     );
 };

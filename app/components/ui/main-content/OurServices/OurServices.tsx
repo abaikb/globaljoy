@@ -19,7 +19,6 @@ const OurServices: React.FC = () => {
             description: t('webDevDesc'),
             deliverables: [
                 t('prioritization'),
-                t('prototypeCreation'),
                 t('marketAnalysis'),
                 t('uniqueDesign'),
                 t('testingFeedback'),
@@ -32,20 +31,6 @@ const OurServices: React.FC = () => {
             deliverables: [
                 t('requirementsDefinition'),
                 t('technicalComplexity'),
-                t('riskAnalysis'),
-                t('documentationPreparation'),
-                t('testingFeedback'),
-            ]
-        },
-        {
-            title: t('mvpDevelopment'),
-            description: t('mvpDevelopmentDesc'),
-            deliverables: [
-                t('coreFeatures'),
-                t('rapidPrototyping'),
-                t('uniqueDesign'),
-                t('testingFeedback'),
-                t('feedbackAdaptation')
             ]
         }
     ];

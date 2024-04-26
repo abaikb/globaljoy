@@ -33,7 +33,7 @@ const Header: React.FC = () => {
             <div className={styles.logoContainer}>
                 <Link className={styles.logoContainer} href="/">
                     <Image src='/logo.PNG' alt="Logo" width={100} height={40} className={styles.logo} />
-                    <h2>Global Lab</h2>
+                    <h2>Global Joy</h2>
                 </Link>
             </div>
             <nav className={`${styles.nav} ${isMenuOpen ? styles.open : ''}`}>

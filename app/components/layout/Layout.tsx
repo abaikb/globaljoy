@@ -1,5 +1,4 @@
 import React, { FC, PropsWithChildren, useEffect, useState } from 'react';
-import styles from './Layout.module.scss';
 import NProgress from 'nprogress';
 import NProgressContainer from 'nextjs-progressbar';
 import Meta, { IMeta } from '@/utils/meta/Meta';

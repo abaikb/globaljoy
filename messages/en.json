@@ -6,34 +6,34 @@
         "contacts": "Contacts"
     },
     "Main": {
-        "title": "We develop IT solutions for your business",
-        "description": "Our professional team is ready to provide you with high-quality web solutions and bring your innovative ideas to life. Global Lab uses the latest and most in-demand technologies to create an outstanding product.",
-        "lid": "submit your application"
+        "title": "Global Joy - your reliable partner in the world of digital opportunities!",
+        "description": "We are a dynamic IT company inspired by a commitment to innovation and technological excellence. Our mission is to create unique solutions that transform businesses and make life brighter and more convenient.",
+        "lid": "send application"
     },
     "OurServices": {
         "title": "Our Services",
         "webDev": "Website Development",
-        "projectResearch": "Project Research",
+        "projectResearch": "JOY platforms",
         "mvpDevelopment": "MVP Development",
         "rapidPrototyping": "Rapid Prototyping",
         "webDevDesc": "Our website development services will help your business stand out online and attract new customers.",
-        "projectResearchDesc": "Our project research services help clients clearly define goals, scope, and potential complexities of the project. This preliminary phase is critical for aligning expectations and creating a foundation for successful project execution.",
+        "projectResearchDesc": "Joy platforms - tools for digital business transformation aimed at increasing profitability, customer service, and adaptability to changing market conditions.",
         "mvpDevelopmentDesc": "Our MVP development services are designed for startups and businesses looking to quickly launch a product with basic features. We focus on creating a minimum viable product that validates your business idea with minimal risks and investments.",
         "results": "Deliverables",
-        "prioritization": "Feature prioritization",
-        "uniqueDesign": "Unique design",
+        "prioritization": "Landing pages ",
+        "uniqueDesign": "Corporate websites",
         "responsiveness": "Responsiveness to different devices",
         "seoOptimization": "SEO optimization",
         "techSupport": "Technical support",
-        "marketAnalysis": "Market and competitor analysis",
-        "requirementsDefinition": "Defining key requirements",
-        "technicalComplexity": "Assessing technical complexity",
+        "marketAnalysis": "Development of complex web services",
+        "requirementsDefinition": "JOY menu",
+        "technicalComplexity": "JOY market",
         "riskAnalysis": "Risk analysis and strategy development",
         "documentationPreparation": "Documentation preparation",
         "coreFeatures": "Defining core features",
         "prototypeCreation": "Rapid prototyping",
-        "testingFeedback": "Testing and feedback",
-        "feedbackAdaptation": "Adapting to feedback",
+        "testingFeedback": "Development of informational websites",
+        "feedbackAdaptation": "Turnkey website development",
         "scaling": "Scaling and further development"
     },
     "TechnologySection": {
@@ -42,18 +42,18 @@
 
     "Processes": {
         "header": "Processes",
-        "ideaSearchTitle": "Idea Search",
-        "ideaSearchDesc": "When you come to us with an idea, we help you articulate it, and then we start working.",
-        "businessAnalysisTitle": "Business Analysis",
-        "businessAnalysisDesc": "We define product features and which specific technologies should be used to implement your idea.",
-        "designPrototypingTitle": "Design and Prototyping",
-        "designPrototypingDesc": "Once we have all the necessary information, we create a prototype that demonstrates the appearance of your application.",
+        "ideaSearchTitle": "Brainstorming",
+        "ideaSearchDesc": "We will facilitate a collaborative discussion aimed at generating the ultimate goal of the project or initiative.",
+        "businessAnalysisTitle": "Technologization",
+        "businessAnalysisDesc": "After defining the goal, we determine the project's key functions and carefully select the specific technologies to bring your idea to life.",
+        "designPrototypingTitle": "Design ",
+        "designPrototypingDesc": "When we have all the necessary information, we begin crafting design layouts that showcase the visual representation of your project.",
         "developmentTitle": "Development",
-        "developmentDesc": "Once the prototype has been reviewed and approved, we begin development.",
+        "developmentDesc": "After you have approved the design, we begin to develop.",
         "testingTitle": "Testing",
-        "testingDesc": "When the main part of programming and design work is done, we conduct thorough testing.",
+        "testingDesc": "Upon completion of the main stages of development and design, we conduct thorough testing.",
         "launchSupportTitle": "Launch and Support",
-        "launchSupportDesc": "After the project is launched, the team monitors its operation to ensure the intended efficiency."
+        "launchSupportDesc": "After the project is launched, we provide continuous support, monitoring the system to ensure its effectiveness."
       },
 
       "Projects": {

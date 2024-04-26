@@ -79,9 +79,8 @@ const ContactForm: React.FC = () => {
                 >
                     <option value="">Выберите направление</option>
                     <option value="web-dev">Веб-разработка</option>
+                    <option value="JOY platforms">JOY платформа</option>
                     <option value="ecommerce">E-commerce решения</option>
-                    <option value="mobile-dev">Разработка мобильных приложений</option>
-                    <option value="digital-marketing">Цифровой маркетинг</option>
                     <option value="branding">Брендинг и дизайн</option>
                     <option value="seo">SEO-оптимизация</option>
                     <option value="data-analysis">Анализ данных</option>
