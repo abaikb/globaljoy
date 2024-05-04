@@ -20,13 +20,13 @@ const projectList: Project[] = [
     technologies: ['React', 'TypeScript', 'Node.js']
   },
   {
-    title: 'Портфолио фотографа',
+    title: 'Joy Menu',
     description: 'Сайт-портфолио для профессионального фотографа с галереей и возможностью бронирования сессий.',
     image: '/icons/figma.svg',
     technologies: ['Vue.js', 'Nuxt.js', 'Vuetify']
   },
   {
-    title: 'Система управления задачами',
+    title: 'Joy Market',
     description: 'Система для управления проектами и задачами в команде с возможностью отслеживания прогресса.',
     image: '/icons/devops.svg',
     technologies: ['Angular', 'Firebase', 'Bootstrap']
