@@ -43,7 +43,7 @@ const Projects: React.FC = () => {
   return (
     <div id="works" className={styles.projectsContainer} {...handlers}>
       <h1>{t('projectsTitle')}</h1>
-      <Carousel ref={carouselRef} dotPosition="bottom" autoplay adaptiveHeight afterChange={(index) => setActiveIndex(index)}>
+      <Carousel ref={carouselRef} dotPosition="bottom"  adaptiveHeight afterChange={(index) => setActiveIndex(index)}>
         {projectList.map((project, index) => (
           <div key={index} className={styles.projectCard}>
             <a href={project.url} target="_blank" rel="noopener noreferrer">
