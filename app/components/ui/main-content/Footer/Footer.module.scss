@@ -1,106 +1,142 @@
 .footer {
-    color: #fff;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    margin-top: 70px;
-  }
-  
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 70px;
+
   .logo {
     font-size: 24px;
     font-weight: bold;
     text-align: left;
+    margin-bottom: 10px;
   }
-  
+
+  .instagramIcon {
+    color: #E1306C; // цвет Instagram
+  }
+
+  .whatsappIcon {
+    color: #25D366; // цвет WhatsApp
+  }
+
+  .linkedinIcon {
+    color: #0077B5; // цвет LinkedIn
+  }
+
+  .facebookIcon {
+    color: #1877F2; // цвет Facebook
+  }
+
   .footerSection {
     width: 100%;
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
-  
-    @media (max-width: 768px) { 
-      flex-direction: column;
-      align-items: center;
+  }
+
+  .emailLink {
+    display: flex;
+    align-items: center;
+    .icon {
+      background: transparent;
+      border: 1px solid #fff;
+      border-radius: 45%;
+      padding: 3px;
+      margin-right: 5px;
     }
   }
-  
+
   .footerLinks,
   .footerProducts,
   .footerContact {
     display: flex;
     flex-direction: column;
-  
-    @media (max-width: 768px) { 
-      align-items: center;
-      margin-bottom: 20px;
-    }
-  }
-  
-  .title {
-    margin-bottom: 10px;
-  }
-  
-  .links {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  
-    li a {
+    gap: 10px;
+
+    a {
       color: #fff;
       text-decoration: none;
-      margin-bottom: 5px;
-  
-      &:hover {
-        text-decoration: underline;
+    }
+
+    .title {
+      margin-bottom: 10px;
+    }
+
+    .links {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li a {
+        color: #fff;
+        text-decoration: none;
+        margin-bottom: 5px;
+
+        &:hover {
+          text-decoration: underline;
+        }
       }
     }
   }
-  
-  .icon {
-    margin-right: 8px;
-  }
-  
+
   .socialIcons {
     display: flex;
     justify-content: center;
     font-size: 1.5rem;
     margin-bottom: 20px;
-  
-    @media (max-width: 768px) { // Для планшетов
-      font-size: 1.2rem;
-    }
+    gap: 10px;
   }
-  
+
   .footerBottom {
     border-top: 1px solid #333;
     padding-top: 10px;
     width: 100%;
+    text-align: center;
+
+    .copyRight {
+      font-size: 0.75rem;
+    }
   }
-  
-  .copyRight {
-    font-size: 0.75rem;
-  }
-  
-  // Медиа-запросы для мобильных устройств
-  @media (max-width: 576px) {
+
+  @media (max-width: 768px) {
     .footerSection {
       flex-direction: column;
+      align-items: center;
     }
-  
+    .logo {
+      display: none;
+    }
+
+    .footerLinks,
+    .footerProducts {
+      display: none;
+    }
+
+    
+  }
+
+  @media (max-width: 576px) {
+    .footerLinks {
+      display: none;
+    }
+
     .footerLinks,
     .footerProducts,
     .footerContact {
+      a {
+        color: #fff;
+      }
+
       align-items: center;
     }
-  
+
     .socialIcons {
       font-size: 1rem;
     }
-  
+
     .copyRight {
       font-size: 0.65rem;
     }
   }
-  
+}

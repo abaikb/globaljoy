@@ -34,11 +34,9 @@
     "feedbackAdaptation": "Разработка сайтов-порталов под ключ",
     "scaling": "Масштабирование и дальнейшее развитие"
   },
-
   "TechnologySection": {
     "title": "Мы используем"
   },
-
   "Processes": {
     "header": "Процессы",
     "ideaSearchTitle": "Брейншторминг",
@@ -54,9 +52,50 @@
     "launchSupportTitle": "Запуск и Поддержка",
     "launchSupportDesc": "После запуска проекта мы обеспечиваем его непрерывную поддержку, следя за работой системы, чтобы гарантировать ее эффективность."
   },
-
   "Projects": {
-    "project1Title": "Проект 1",
-    "project1Desc": "описание  1"
+    "projectsTitle": "Проекты",
+    "onlineMigrationGuideTitle": "Онлайн руководство для миграции в Канаду",
+    "onlineMigrationGuideDescription": "Веб-приложение для обучения и подготовки к миграции в Канаду.",
+    "joyMenuQrMenuTitle": "Joy Menu QR меню",
+    "joyMenuQrMenuDescription": "Сервис для ресторанов, позволяющий создавать QR-меню.",
+    "technologiesUsed": "Используемые технологии:"
+  },
+  "ContactForm": {
+    "contact": "Связь",
+    "interest": "Заинтересовались нашими услугами? Расскажите нам о вашем проекте!",
+    "namePlaceholder": "* Имя",
+    "emailPlaceholder": "* E-mail",
+    "selectDirection": "Выберите направление",
+    "webDev": "Веб-разработка",
+    "joyPlatforms": "JOY платформа",
+    "eCommerce": "E-commerce решения",
+    "brandingDesign": "Брендинг и дизайн",
+    "seoOptimization": "SEO-оптимизация",
+    "dataAnalysis": "Анализ данных",
+    "selectBudget": "Выберите бюджет",
+    "upTo5k": "$5,000 и меньше",
+    "5kTo10k": "$5,000 - $10,000",
+    "10kTo25k": "$10,000 - $25,000",
+    "25kTo50k": "$25,000 - $50,000",
+    "50kTo100k": "$50,000 - $100,000",
+    "100kPlus": "$100,000 и больше",
+    "timeline": "Сроки",
+    "threeMonths": "3 месяцев",
+    "threeToSixMonths": "3-6 месяцев",
+    "moreThanSixMonths": "6 месяцев и более",
+    "projectDetails": "Детали проекта",
+    "detailsPlaceholder": "Опишите ваш проект",
+    "attachFile": "Прикрепить файл",
+    "submit": "Отправить запрос"
+  },
+  "Footer": {
+    "information": "Информация",
+    "aboutUs": "О нас",
+    "services": "Услуги",
+    "processes": "Процессы",
+    "projects": "Проекты",
+    "ourProducts": "Наши продукты",
+    "contacts": "Контакты",
+    "copyRight": "© 2024 Global Joy. Все права защищены."
   }
 }

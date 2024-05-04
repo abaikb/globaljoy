@@ -1,84 +1,59 @@
 .projectsContainer {
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-top: 60px;
+  background: #202020;
+  padding: 20px;
+  border-radius: 20px;
+  max-width: 600px;
+  margin: 20px auto;
+  margin-bottom: 40px;
 
   h1 {
     text-align: center;
-    margin-bottom: 30px;
     color: #fff;
-  }
-}
-
-.projectCarousel {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.projectCard {
-  background: #202020;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  text-align: center;
-  border-radius: 10px;
-  padding: 20px;
-  max-width: 600px;
-  height: 500px;
-  transition: transform 0.5s ease;
-  position: relative;
-
-  img {
-    max-width: 300px;
+    margin-bottom: 20px;
     background: #202020;
   }
-}
 
-.projectCard:not(:first-child) {
-  transform: translateX(-100%);
-}
-
-.projectCard.active {
-  transform: translateX(0);
-}
-
-.projectTitle {
-  font-size: 20px;
-  background: #202020;
-  color: #fff;
-
-}
-
-.projectDescription {
-  font-size: 16px;
-  color: #666;
-  background: #202020;
-  color: #fff;
-
-}
-
-.technologies {
-  font-size: 14px;
-  color: #888;
-  background: #202020;
-}
-
-.containerBtn {
-  margin-top: 60px;
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 70px;
-
-  button {
-    border: none;
-    border-radius: 7px;
-    color: #fff;
-    background: #202020;
-    max-width: 300px;
+  .projectCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 10px;
+    border-radius: 8px;
+    background: #202020;
+    text-align: center;
+
+    h4 {
+      color: #fff;
+      background: #202020;
+      font-size: 17px;
+      margin-top: 10px;
+    }
+
+    p {
+      color: #666666;
+      font-size: 14px;
+      background: #202020;
+
+    }
+
+    .technologies {
+      margin-top: 10px;
+      font-size: 12px;
+      color: #004174;
+      font-style: italic;
+      background: #202020;
+      margin-bottom: 20px;
+    }
+  }
+
+
+  .nextImage {
+    position: relative;
+    width: 100%;
+
+    img {
+      object-fit: contain;
+      background: #202020;
+    }
   }
 }

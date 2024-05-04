@@ -39,7 +39,6 @@
     "TechnologySection": {
         "title": " We Use"
     },
-
     "Processes": {
         "header": "Processes",
         "ideaSearchTitle": "Brainstorming",
@@ -54,10 +53,52 @@
         "testingDesc": "Upon completion of the main stages of development and design, we conduct thorough testing.",
         "launchSupportTitle": "Launch and Support",
         "launchSupportDesc": "After the project is launched, we provide continuous support, monitoring the system to ensure its effectiveness."
-      },
-
-      "Projects": {
-        "project1Title": "Project 1",
-        "project1Desc": "description  1"
+    },
+    "Projects": {
+        "projectsTitle": "Projects",
+        "onlineMigrationGuideTitle": "Online Guide for Migration to Canada",
+        "onlineMigrationGuideDescription": "A web application for training and preparation for migration to Canada.",
+        "joyMenuQrMenuTitle": "Joy Menu QR Menu",
+        "joyMenuQrMenuDescription": "Service for restaurants that allows creating QR menus.",
+        "technologiesUsed": "Technologies Used:"
+    },
+    "ContactForm": {
+        "contact": "Contact",
+        "interest": "Interested in our services? Tell us about your project!",
+        "namePlaceholder": "* Name",
+        "emailPlaceholder": "* E-mail",
+        "selectDirection": "Select direction",
+        "webDev": "Web Development",
+        "joyPlatforms": "JOY Platforms",
+        "eCommerce": "E-commerce Solutions",
+        "brandingDesign": "Branding and Design",
+        "seoOptimization": "SEO Optimization",
+        "dataAnalysis": "Data Analysis",
+        "selectBudget": "Select budget",
+        "upTo5k": "Up to $5,000",
+        "5kTo10k": "$5,000 - $10,000",
+        "10kTo25k": "$10,000 - $25,000",
+        "25kTo50k": "$25,000 - $50,000",
+        "50kTo100k": "$50,000 - $100,000",
+        "100kPlus": "More than $100,000",
+        "timeline": "Timeline",
+        "threeMonths": "3 months",
+        "threeToSixMonths": "3-6 months",
+        "moreThanSixMonths": "More than 6 months",
+        "projectDetails": "Project details",
+        "detailsPlaceholder": "Describe your project",
+        "attachFile": "Attach file",
+        "submit": "Submit"
+    },
+    "Footer": {
+        "information": "Information",
+        "aboutUs": "About Us",
+        "services": "Services",
+        "processes": "Processes",
+        "projects": "Projects",
+        "ourProducts": "Our Products",
+        "contacts": "Contacts",
+        "copyRight": "© 2024 Global Joy. All rights reserved."
       }
+    
 }
