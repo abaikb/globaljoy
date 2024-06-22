@@ -88,7 +88,8 @@
         "projectDetails": "Project details",
         "detailsPlaceholder": "Describe your project",
         "attachFile": "Attach file",
-        "submit": "Submit"
+        "submit": "Submit",
+        "loading": "Loading..."
     },
     "Footer": {
         "information": "Information",

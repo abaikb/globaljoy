@@ -86,7 +86,8 @@
     "projectDetails": "Детали проекта",
     "detailsPlaceholder": "Опишите ваш проект",
     "attachFile": "Прикрепить файл",
-    "submit": "Отправить запрос"
+    "submit": "Отправить запрос",
+    "loading": "Загрузка..."
   },
   "Footer": {
     "information": "Информация",

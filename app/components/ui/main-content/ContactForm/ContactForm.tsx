@@ -9,7 +9,7 @@ interface IFormData {
     timeline: string;
     details: string;
     direction: string;
-    file: File | null;
+    // file: File | null;
 }
 
 const ContactForm: React.FC = () => {
@@ -20,13 +20,14 @@ const ContactForm: React.FC = () => {
         budget: '',
         timeline: '',
         details: '',
-        file: null,
+        // file: null,
         direction: '',
     });
+    const [loading, setLoading] = useState(false);
+    const [status, setStatus] = useState('');
 
     const handleChange = (event: ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>) => {
         const target = event.target as HTMLInputElement;
-
         const { name, value } = target;
         setFormData((prevFormData) => ({
             ...prevFormData,
@@ -34,17 +35,54 @@ const ContactForm: React.FC = () => {
         }));
     };
 
-    const handleFileChange = (event: ChangeEvent<HTMLInputElement>) => {
-        setFormData((prevFormData) => ({
-            ...prevFormData,
-            file: event.target.files ? event.target.files[0] : null,
-        }));
-    };
+    // const handleFileChange = (event: ChangeEvent<HTMLInputElement>) => {
+    //     setFormData((prevFormData) => ({
+    //         ...prevFormData,
+    //         file: event.target.files ? event.target.files[0] : null,
+    //     }));
+    // };
 
-    const handleSubmit = (event: FormEvent) => {
+    const handleSubmit = async (event: FormEvent) => {
         event.preventDefault();
-        // TODO: Обработка данных формы, например отправка на сервер
-        console.log(formData);
+        setLoading(true);
+
+
+        const formDataToSend = new FormData();
+        formDataToSend.append('name', formData.name);
+        formDataToSend.append('email', formData.email);
+        formDataToSend.append('budget', formData.budget);
+        formDataToSend.append('timeline', formData.timeline);
+        formDataToSend.append('details', formData.details);
+        formDataToSend.append('direction', formData.direction);
+
+
+        try {
+            const formspreeResponse = await fetch('https://formspree.io/f/mzzpperv', {
+                method: 'POST',
+                body: formDataToSend,
+                headers: {
+                    'Accept': 'application/json',
+                },
+            });
+            if (formspreeResponse.ok) {
+                setStatus('Form submitted successfully!');
+                setFormData({
+                    name: '',
+                    email: '',
+                    budget: '',
+                    timeline: '',
+                    details: '',
+                    // file: null,
+                    direction: '',
+                });
+            } else {
+                setStatus('Failed to submit form');
+            }
+        } catch (error) {
+            console.error('Error submitting form:', error);
+            setStatus('Error submitting form');
+        }
+        setLoading(false);
     };
 
     return (
@@ -61,7 +99,6 @@ const ContactForm: React.FC = () => {
                     value={formData.name}
                     onChange={handleChange}
                 />
-
                 <input
                     className={styles.input}
                     id="email"
@@ -71,7 +108,6 @@ const ContactForm: React.FC = () => {
                     value={formData.email}
                     onChange={handleChange}
                 />
-
                 <select
                     className={styles.select}
                     id="direction"
@@ -87,8 +123,6 @@ const ContactForm: React.FC = () => {
                     <option value="seo">{t('seoOptimization')}</option>
                     <option value="data-analysis">{t('dataAnalysis')}</option>
                 </select>
-
-
                 <select
                     className={styles.select}
                     id="budget"
@@ -104,7 +138,6 @@ const ContactForm: React.FC = () => {
                     <option value="50k-100k">{t('50kTo100k')}</option>
                     <option value="100k+">{t('100kPlus')}</option>
                 </select>
-
                 <label className={styles.label} htmlFor="timeline">{t('timeline')}</label>
                 <select
                     className={styles.select}
@@ -117,7 +150,6 @@ const ContactForm: React.FC = () => {
                     <option value="3-6 months">{t('threeToSixMonths')}</option>
                     <option value=">6 months">{t('moreThanSixMonths')}</option>
                 </select>
-
                 <label className={styles.label} htmlFor="details">{t('projectDetails')}</label>
                 <textarea
                     className={styles.textarea}
@@ -128,18 +160,20 @@ const ContactForm: React.FC = () => {
                     value={formData.details}
                     onChange={handleChange}
                 />
-
-                <label htmlFor="file-upload" className={styles.fileInputLabel}>
-                    {t('attachFile')}
-                    <input
-                        id="file-upload"
-                        type="file"
-                        className={styles.fileInput}
-                        onChange={handleFileChange}
-                        style={{ display: 'none' }} 
-                    />
-                </label>
-                <button className={styles.submitButton} type="submit">{t('submit')}</button>
+                {/*<label htmlFor="file-upload" className={styles.fileInputLabel}>*/}
+                {/*    {t('attachFile')}*/}
+                {/*    <input*/}
+                {/*        id="file-upload"*/}
+                {/*        type="file"*/}
+                {/*        className={styles.fileInput}*/}
+                {/*        onChange={handleFileChange}*/}
+                {/*        style={{ display: 'none' }}*/}
+                {/*    />*/}
+                {/*</label>*/}
+                <button className={styles.submitButton} type="submit" disabled={loading}>
+                    { loading ? t('loading') : t('submit')}
+                </button>
+                {status && <p className={styles.status}>{status}</p>}
             </form>
         </div>
     );
