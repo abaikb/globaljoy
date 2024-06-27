@@ -49,7 +49,7 @@ const ContactForm: React.FC = () => {
 
         const formDataToSend = new FormData();
         formDataToSend.append('name', formData.name);
-        formDataToSend.append('email', formData.email);
+        formDataToSend.append('email', "globaljoylab@gmail.com");
         formDataToSend.append('budget', formData.budget);
         formDataToSend.append('timeline', formData.timeline);
         formDataToSend.append('details', formData.details);
@@ -57,7 +57,7 @@ const ContactForm: React.FC = () => {
 
 
         try {
-            const formspreeResponse = await fetch('https://formspree.io/f/mzzpperv', {
+            const formspreeResponse = await fetch('https://formspree.io/f/xkgwwjpp', {
                 method: 'POST',
                 body: formDataToSend,
                 headers: {
@@ -99,15 +99,15 @@ const ContactForm: React.FC = () => {
                     value={formData.name}
                     onChange={handleChange}
                 />
-                <input
-                    className={styles.input}
-                    id="email"
-                    name="email"
-                    type="email"
-                    placeholder={t('emailPlaceholder')}
-                    value={formData.email}
-                    onChange={handleChange}
-                />
+                {/*<input*/}
+                {/*    className={styles.input}*/}
+                {/*    id="email"*/}
+                {/*    name="email"*/}
+                {/*    type="email"*/}
+                {/*    placeholder={t('emailPlaceholder')}*/}
+                {/*    value={formData.email}*/}
+                {/*    onChange={handleChange}*/}
+                {/*/>*/}
                 <select
                     className={styles.select}
                     id="direction"
