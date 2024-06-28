@@ -17,14 +17,14 @@ const projectList: Project[] = [
   {
     title: 'onlineMigrationGuideTitle',
     description: 'onlineMigrationGuideDescription',
-    image: '/icons/django.svg',
+    image: '/canada.png',
     technologies: ['React', 'TypeScript', ' Fastapi'],
     url: 'https://example.com/migration-canada'
   },
   {
     title: 'joyMenuQrMenuTitle',
     description: 'joyMenuQrMenuDescription',
-    image: '/icons/figma.svg',
+    image: '/joy.png',
     technologies: ['Next.js', 'Fastapi', 'MongoDB'],
     url: 'https://example.com/joy-menu'
   }
@@ -42,16 +42,28 @@ const Projects: React.FC = () => {
 
   return (
     <div id="works" className={styles.projectsContainer} {...handlers}>
-      <h1>{t('projectsTitle')}</h1>
-      <Carousel ref={carouselRef} dotPosition="bottom"  adaptiveHeight afterChange={(index) => setActiveIndex(index)}>
+      <h1 className={styles.title}>{t('projectsTitle')}</h1>
+      <Carousel
+        ref={carouselRef}
+        dotPosition="bottom"
+        adaptiveHeight
+        afterChange={(index) => setActiveIndex(index)}
+      >
         {projectList.map((project, index) => (
           <div key={index} className={styles.projectCard}>
             <a href={project.url} target="_blank" rel="noopener noreferrer">
               <div className={styles.nextImage}>
-                <Image src={project.image} alt={t(project.title)} width={300} height={200} layout="responsive" />
+                <Image
+                  src={project.image}
+                  alt={t(project.title)}
+                  width={300}
+                  height={200}
+                  layout="responsive"
+                  objectFit="contain"
+                />
               </div>
-              <h4>{t(project.title)}</h4>
-              <p>{t(project.description)}</p>
+              <h4 className={styles.projectTitle}>{t(project.title)}</h4>
+              <p className={styles.projectDescription}>{t(project.description)}</p>
               <div className={styles.technologies}>
                 {t('technologiesUsed')}: {project.technologies.join(', ')}
               </div>

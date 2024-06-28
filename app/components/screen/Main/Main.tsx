@@ -18,7 +18,7 @@ const Main = () => {
         <Layout title={"Главная Страница"}>
             <div className={styles.container}>
                 <div className={styles.text}>
-                    <h1 className={styles.aboutus__title}>{t('title')}</h1>
+                    <h1 className={styles.aboutus__title}> {t('title')}</h1>
                     <p className={styles.aboutus__desc}>{t('description')}</p>
                     <button className={styles.btn}>{t('lid')}</button>
                 </div>
